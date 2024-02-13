@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>educación</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    header {
+    background-color: #645877;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+
+            /* Create two columns/boxes that floats next to each other */
+    nav {
+    float: left;
+    width: 15%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #ddc1c1;
+    padding: 10px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+    article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #dbb1cb;
+    height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+    background-color: #d494cf;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    }
+    </style>
+
+
 </head>
-<body>
-    
+<body style="background-color:rgb(255, 212, 212);">
+    <header style="font-size:50px;text-align:center;"><i>educación</i></header> 
+    <section>
+        <nav>
+          <ul>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/index.html">index</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/amigos.html">amigos</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/familia.html">familia</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/educación.html">educación</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/hobbies.html">hobbies</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/horario.html">horario</a></li>
+            <li><a style="font-size:160%;color:#645877"href="http://127.0.0.1:5500/proyecto.html">proyecto de vida</a></li>
+          </ul>
+        </nav>
+    </section> 
 </body>
 </html>
